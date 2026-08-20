@@ -32,7 +32,7 @@ class Employee extends Person {
   }
 
   describe(): string {
-    const description = `Employee ${super.fullName()} working at ${this.company}`;
+    const description = `${super.fullName()} working at ${this.company}`;
     if (this.boss != null) {
       return `${description} (under ${this.boss.describe()})`;
     } else {
@@ -54,7 +54,7 @@ class Customer extends Person {
   }
 
   describe(): string {
-    return `Customer ${super.fullName()} worth ${this.revenue}`;
+    return `${super.fullName()} worth ${this.revenue}`;
   }
 }
 
