@@ -19,13 +19,13 @@ class Value {
 }
 
 abstract class Operation {
-  private operand: number;
+  protected operand: number;
 
   constructor(operand: number) {
     this.operand = operand;
   }
 
-  perform(x: number): number;
+  abstract perform(x: number): number;
 }
 
 class Add extends Operation {
