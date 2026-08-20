@@ -5,11 +5,11 @@ class Counter {
     this.count = 0;
   }
 
-  public increase() {
+  increase() {
     this.count++;
   }
 
-  public getCount(): number {
+  getCount(): number {
     return this.count;
   }
 }

@@ -7,11 +7,11 @@ class FullName {
     this.lastName = lastName;
   }
 
-  public formatDefault(): string {
+  formatDefault(): string {
     return `${this.firstName} ${this.lastName}`;
   }
 
-  public formatSwiss(): string {
+  formatSwiss(): string {
     return `${this.lastName}, ${this.firstName}`;
   }
 }
